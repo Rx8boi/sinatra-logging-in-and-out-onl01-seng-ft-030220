@@ -4,7 +4,7 @@ class Helpers
     @user = User.find(arg[:user_id])
   end
 
-  def self.is_logged_in?
-
+  def self.is_logged_in?(arg)
+    !!arg[:user_id]
   end
 end
