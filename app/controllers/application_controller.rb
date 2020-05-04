@@ -22,7 +22,7 @@ end
 
   get '/account' do
     @user = User.find(session[:user_id])
-    erb: '/account'
+    erb :'/account'
   end
 
   get '/logout' do
